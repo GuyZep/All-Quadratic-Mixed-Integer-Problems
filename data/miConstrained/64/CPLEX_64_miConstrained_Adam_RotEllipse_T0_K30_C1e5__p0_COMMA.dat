@@ -1,0 +1,65 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Dual objective     =             0.037650
+Removing shift (1).
+Iteration:     2   Scaled dual infeas =             0.255807
+Root relaxation solution time = 0.00 sec. (0.34 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0501    32                      0.0501       16         
+*     0+    0                            0.0466        0.0501            -7.42%
+Found incumbent of value 0.046612 after 0.08 sec. (30.37 ticks)
+      0     0        cutoff              0.0466        0.0501       16   -7.42%
+Elapsed time = 0.08 sec. (30.38 ticks, tree = 0.01 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (30.40 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (30.40 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 0.04661236
+X*: [2.0288 0.95392 1.0345 0.95392 1.0345 0.95392 0.040295 0.95392 0.040312 0.95392
+     -0.95394 0.95392 -1.9482 0.95392 -1.9482 0.95392 1.0346 0.95392 0.0403
+     0.95392 0.040303 0.95392 -0.95395 0.95392 -0.95393 0.95392 -1.9482 0.95392
+     -2.9424 0.95392 -3.9367 0.95392] Z*: [2 1 1 1 1 1 0 1 0 1 -1 1 -2 1 -2 1 1 1 0 1 0 1 -1 1 -1 1 -2 1 -3 1 -4 1]
+f*:0.052932072
+
+<<< post process
+
+
+<<< done
+

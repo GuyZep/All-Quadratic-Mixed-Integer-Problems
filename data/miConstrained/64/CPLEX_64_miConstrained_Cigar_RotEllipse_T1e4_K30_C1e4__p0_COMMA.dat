@@ -1,0 +1,74 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 71 rows, 263 columns, and 2349 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.67 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.10 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 67 rows and 67 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 194 columns, and 130 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.42 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   -88391.3672    32                 -88391.3672       23         
+      0     2   -88876.6450    32                 -88391.3672       52         
+Elapsed time = 1.86 sec. (424.10 ticks, tree = 0.01 MB, solutions = 0)
+     16    14  -125510.0067    31                 -68419.4100      401         
+     61    44   -24213.0280    28                 -68419.4100     1259         
+    128   118   -20161.0330    25                 -29213.8182     3276         
+    185   120    -2261.5241    26                 -29213.8182     3336         
+    250   206    11470.3519    25                 -29213.8182     5699         
+    314   291   no solution                       -29213.8182     8025         
+    380   350    12938.8479    22                 -29213.8182     9586         
+    436   394   no solution                       -29213.8182    10795         
+    507   451   no solution                       -29213.8182    12395         
+    781   669   no solution                       -29213.8182    19103         
+Elapsed time = 3.94 sec. (3558.97 ticks, tree = 0.13 MB, solutions = 0)
+   1047   852    13346.3060    20                 -29213.8182    25365         
+   1362  1029   no solution                       -29213.8182    32729         
+   1824  1135   no solution                       -29213.8182    40218         
+
+There may be further error information in the clone logs.
+
+Root node processing (before b&c):
+  Real time             =    1.86 sec. (391.72 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    4.39 sec. (6748.61 ticks)
+  Sync time (average)   =    0.35 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    6.25 sec. (7140.33 ticks)
+*** FATAL[ENGINE_002]: Exception from IBM ILOG CPLEX: CPLEX Error  3019: Failure to solve MIP subproblem.
+.
+### ENGINE exception: Processing failed.
+
+<<< no solution
+

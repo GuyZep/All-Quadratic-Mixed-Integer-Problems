@@ -1,0 +1,102 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 64 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (2.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Tried aggregator 1 time.
+LP Presolve eliminated 132 rows and 386 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.26 ticks)
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.00 sec. (0.41 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      955.1612     0                                    0         
+      0     0      955.1612     1                     Cone: 2        1         
+      0     0      955.1612     2                     Cone: 4        2         
+      0     0      955.1612     2                     Cone: 6        3         
+      0     0      955.1612     3                     Cone: 8        4         
+      0     0      955.1612     3                    Cone: 10        5         
+      0     0      955.1612     4                    Cone: 12        6         
+      0     0     1115.9587     5                   Cone: 141      137         
+      0     0     1115.9906    64                   Cone: 268      198         
+      0     0     1116.0065    64                   Cone: 393      255         
+      0     0     1116.0144    64                   Cone: 520      307         
+      0     0     1116.0183    64                   Cone: 647      345         
+      0     0     1116.0202    64                   Cone: 728      352         
+      0     0     1116.0210    64                   Cone: 809      356         
+      0     0     1116.0215    64                   Cone: 890      360         
+      0     0     1116.0218    63                   Cone: 971      365         
+      0     0     1116.0220    64                  Cone: 1052      371         
+      0     0     1116.0221    64                  Cone: 1133      377         
+      0     0     1116.0222    64                  Cone: 1214      384         
+      0     0     1116.0222    63                  Cone: 1295      392         
+      0     0     1116.0223    64                  Cone: 1376      400         
+      0     0     1116.0223    64                  Cone: 1457      409         
+      0     0     1116.0223    64                  Cone: 1538      417         
+      0     0     1116.0224    64                   1116.0224      431         
+      0     2     1116.0224    64                   1116.0224      445         
+Elapsed time = 0.89 sec. (476.29 ticks, tree = 0.01 MB, solutions = 0)
+      8    10     1116.0272    56                   1116.0224      576         
+*    10+    1                         1117.3183     1116.0224             0.12%
+Found incumbent of value 1117.318292 after 1.30 sec. (953.14 ticks)
+     10     7     1116.1119    59     1117.3183     1116.0224      526    0.12%
+     13     5     1116.0889    61     1117.3183     1116.0224      495    0.12%
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+*    14+   14                         1117.2212     1116.0224             0.11%
+Found incumbent of value 1117.221217 after 19.77 sec. (26041.03 ticks)
+*    14+   14                         1117.2059     1116.0224             0.11%
+Found incumbent of value 1117.205935 after 19.98 sec. (26184.78 ticks)
+*    14+   14                         1117.0558     1116.0224             0.09%
+Found incumbent of value 1117.055778 after 20.73 sec. (26695.70 ticks)
+*    14+   14                         1116.8404     1116.0224             0.07%
+Found incumbent of value 1116.840354 after 20.89 sec. (26862.67 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.88 sec. (448.28 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   21.89 sec. (30329.27 ticks)
+  Sync time (average)   =    0.52 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   22.77 sec. (30777.55 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1116.84
+X*: [-2 3 -2 2 -2 3 -2 3 -2 2 -2 3 -2 2 -2 3 -1 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2
+     -2 2] Z*: [-2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2
+     -2 2]
+f*:1116.840354157
+
+<<< post process
+
+
+<<< done
+

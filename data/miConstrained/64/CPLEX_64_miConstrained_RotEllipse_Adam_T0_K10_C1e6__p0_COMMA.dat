@@ -1,0 +1,65 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =           238.364126
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.33 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+*     0     0      integral     0        0.0000        0.0000       15    0.00%
+Elapsed time = 0.05 sec. (20.71 ticks, tree = 0.00 MB, solutions = 1)
+Found incumbent of value 0.000001 after 0.05 sec. (20.71 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.05 sec. (20.73 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.05 sec. (20.73 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.050492e-8
+X*: [6.996 -7.002 6.9998 -7.0019 7.0002 -7.0016 7.0025 -7.0019 6.9932 -7.0004 6.9978
+     -7.0006 7.0012 -7.0004 6.9995 -7.0015 7.0116 -7 7.0073 -7.0002 7.0036
+     -7.0004 7.0009 -7.0004 7.0003 -7.0004 6.9997 -7.0004 6.9997 -7.0003 6.9999
+     -7.0003] Z*: [7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7
+     7 -7]
+f*:5.346724247e-07
+
+<<< post process
+
+
+<<< done
+

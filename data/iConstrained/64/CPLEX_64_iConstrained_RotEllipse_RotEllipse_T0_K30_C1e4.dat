@@ -1,0 +1,90 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 64 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (2.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Tried aggregator 1 time.
+LP Presolve eliminated 132 rows and 386 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.26 ticks)
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.00 sec. (0.41 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      472.2738     0                                    0         
+      0     0      472.2738     1                     Cone: 2        1         
+      0     0      472.2738     2                     Cone: 4        2         
+      0     0      472.2738     2                     Cone: 6        3         
+      0     0      472.2738     2                     Cone: 8        4         
+      0     0      472.2738     3                    Cone: 10        6         
+      0     0      472.2738     4                    Cone: 12        7         
+      0     0      540.0696    64                    540.0696      100         
+*     0+    0                          552.0348      540.0696             2.17%
+Found incumbent of value 552.034752 after 0.09 sec. (39.11 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2      540.0696    64      552.0348      540.0696      113    2.17%
+Elapsed time = 0.11 sec. (65.26 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                          546.3028      540.0696             1.14%
+                                                     Cone: 78                  
+Found incumbent of value 546.302791 after 0.34 sec. (189.46 ticks)
+*     1+    1                          540.9338      540.0696             0.16%
+Found incumbent of value 540.933787 after 0.36 sec. (661.13 ticks)
+*     1+    1                          540.9287      540.0696             0.16%
+Found incumbent of value 540.928741 after 0.36 sec. (680.13 ticks)
+*     1+    1                          540.9279      540.0696             0.16%
+Found incumbent of value 540.927946 after 0.50 sec. (1009.78 ticks)
+*     1+    1                          540.9269      540.0696             0.16%
+Found incumbent of value 540.926877 after 0.50 sec. (1021.14 ticks)
+*     1+    1                          540.2223      540.0696             0.03%
+Found incumbent of value 540.222323 after 1.02 sec. (2309.30 ticks)
+*     1+    1                          540.1859      540.0696             0.02%
+Found incumbent of value 540.185885 after 2.50 sec. (6289.17 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (39.15 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    2.42 sec. (6280.82 ticks)
+  Sync time (average)   =    0.69 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.52 sec. (6319.96 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 540.1859
+X*: [-2 1 -2 1 -2 2 -2 1 -2 2 -3 2 -3 2 -3 1 -2 2 -2 2 -2 1 -2 2 -2 2 -2 2 -2 2
+     -2 2] Z*: [-2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2
+     -2 2]
+f*:540.185885136
+
+<<< post process
+
+
+<<< done
+

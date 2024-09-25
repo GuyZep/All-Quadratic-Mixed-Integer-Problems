@@ -1,0 +1,84 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =           -51.929622
+Root relaxation solution time = 0.00 sec. (0.27 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      -51.9296     0                                    2         
+      0     0      -51.9296     1                     Cone: 2        3         
+      0     0      -51.9296     1                     Cone: 4        4         
+      0     0      -51.9296     1                     Cone: 6        5         
+      0     0      -51.9296     1                     Cone: 8        6         
+      0     0      -51.9296     1                    Cone: 10        7         
+      0     0      -51.9296     2                    Cone: 12        8         
+      0     0        0.0001     2                   Cone: 141      167         
+      0     0        0.0003    32                   Cone: 237      195         
+      0     0        0.0003    32                   Cone: 336      210         
+      0     0        0.0003    32                   Cone: 436      214         
+      0     0        0.0003    32                   Cone: 536      219         
+      0     0        0.0003    32                   Cone: 636      225         
+      0     0        0.0003    32                   Cone: 736      231         
+      0     0        0.0003    32                   Cone: 838      238         
+      0     0        0.0003    32                   Cone: 940      246         
+      0     0        0.0003    32                  Cone: 1042      255         
+      0     0        0.0003    32                  Cone: 1144      265         
+      0     0        0.0001    32                  Cone: 1248      278         
+      0     0        0.0001    32                  Cone: 1351      291         
+      0     0        0.0000    32                  Cone: 1454      304         
+      0     0        0.0000    32                  Cone: 1557      315         
+      0     0        0.0000    32                  Cone: 1660      325         
+*     0     0      integral     0        0.0000        0.0000      339    0.00%
+Elapsed time = 0.09 sec. (59.17 ticks, tree = 0.00 MB, solutions = 1)
+Found incumbent of value 0.000000 after 0.09 sec. (59.17 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.09 sec. (59.19 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.09 sec. (59.19 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 1.576517e-14
+X*: [7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7
+     7 -7] Z*: [7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7 7 -7
+     7 -7]
+f*:1.105581337e-14
+
+<<< post process
+
+
+<<< done
+

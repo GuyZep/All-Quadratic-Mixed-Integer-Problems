@@ -1,0 +1,64 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.28 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -3719.4810    32                  -3719.4810       17         
+*     0+    0                       -19373.1886    -3719.4810           -80.80%
+Found incumbent of value -19373.188554 after 0.33 sec. (89.13 ticks)
+      0     0        cutoff         -19373.1886    -3719.4810       17  -80.80%
+Elapsed time = 0.33 sec. (89.13 ticks, tree = 0.01 MB, solutions = 1)
+
+Root node processing (before b&c):
+  Real time             =    0.33 sec. (89.15 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.33 sec. (89.15 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -19373.19
+X*: [10066 10072 10064 10072 10064 10072 10064 10072 10065 10072 10063 10072 10064
+     10072 10064 10073 10063 10072 10064 10072 10064 10072 10064 10072 10064
+     10072 10064 10072 10064 10071 10064 10076] Z*: [9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004
+     9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996
+     10004 9996 10004 9996 10004]
+f*:32115.080330391
+
+<<< post process
+
+
+<<< done
+

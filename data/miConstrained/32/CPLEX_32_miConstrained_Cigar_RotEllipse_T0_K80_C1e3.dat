@@ -1,0 +1,87 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 39 rows, 135 columns, and 669 nonzeros.
+Reduced MIQCP has 0 binaries, 16 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.18 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'z(1)'.
+Presolve time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 35 rows and 35 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 98 columns, and 66 nonzeros.
+Presolve time = 0.00 sec. (0.05 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.16 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      480.2727    16                    480.2727       22         
+*     0+    0                          482.9829      480.2727             0.56%
+Found incumbent of value 482.982891 after 0.03 sec. (7.97 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2      480.2727    16      482.9829      480.2727       43    0.56%
+Elapsed time = 0.03 sec. (11.23 ticks, tree = 0.01 MB, solutions = 1)
+      1     3      481.3147    15      482.9829      480.2727       61    0.56%
+      3     4      482.3116    14      482.9829      480.2727       78    0.56%
+      5     4      482.1202    14      482.9829      481.1931       81    0.37%
+      6     5      481.7426    14      482.9829      481.1931       95    0.37%
+      7     6      482.8184    13      482.9829      481.1931      114    0.37%
+      9     8      482.5093    13      482.9829      481.1931      159    0.37%
+     13     9      482.0421    13      482.9829      481.7426      176    0.26%
+     14     8      482.6559    13      482.9829      481.7426      158    0.26%
+     15    15      482.6341    12      482.9829      481.7426      283    0.26%
+     16    16      482.2038    12      482.9829      482.0421      306    0.19%
+Elapsed time = 9.97 sec. (14432.28 ticks, tree = 0.01 MB, solutions = 1)
+     17    16        cutoff            482.9829      482.0421      344    0.19%
+     18    19      482.6073    12      482.9829      482.0421      365    0.19%
+     20    18        cutoff            482.9829      482.2038      426    0.16%
+     22    18        cutoff            482.9829      482.4493      462    0.11%
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (7.97 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   16.20 sec. (28041.55 ticks)
+  Sync time (average)   =   10.36 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   16.23 sec. (28049.52 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 482.9829
+X*: [74.826 -4.2694 7.3707 -4.2781 7.3074 -4.2914 7.2097 -4.312 7.0597 -4.3434
+     6.8318 -4.3909 6.4904 -4.4613 5.9899 -4.5632] Z*: [-4 -5 4 -5 3 -5 2 -5 0 -6 -2 -6 -3 -6 -4 -6]
+f*:482.982890292
+
+<<< post process
+
+
+<<< done
+

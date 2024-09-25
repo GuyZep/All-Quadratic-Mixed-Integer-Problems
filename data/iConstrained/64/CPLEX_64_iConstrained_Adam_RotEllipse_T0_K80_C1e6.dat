@@ -1,0 +1,65 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 64 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (2.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Tried aggregator 1 time.
+LP Presolve eliminated 132 rows and 322 columns.
+Aggregator did 1 substitutions.
+Reduced LP has 0 rows, 64 columns, and 0 nonzeros.
+Presolve time = 0.00 sec. (0.26 ticks)
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.00 sec. (0.41 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        0.0045     0                                    0         
+      0     0        0.0042     1                     Cone: 2        2         
+      0     0        0.0040     2                     Cone: 4        4         
+      0     0        0.0039     3                     Cone: 6        6         
+      0     0        0.0038     4                     Cone: 8        8         
+      0     0        0.0035     6                    Cone: 10       11         
+      0     0       -0.0865    55                     -0.0865       18         
+      0     2       -0.0864    54                     -0.0865       18         
+Elapsed time = 0.06 sec. (91.59 ticks, tree = 0.01 MB, solutions = 0)
+    954   764        7.7953    21                     -0.0864     6060         
+                                                    Cuts: 100                  
+
+There may be further error information in the clone logs.
+
+Cone linearizations applied:  185
+
+Root node processing (before b&c):
+  Real time             =    0.06 sec. (90.87 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.33 sec. (254.09 ticks)
+  Sync time (average)   =    0.09 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.39 sec. (344.97 ticks)
+*** FATAL[ENGINE_002]: Exception from IBM ILOG CPLEX: CPLEX Error  3018: Magnitude of variable %s: %g exceeds integer limit %d.
+.
+### ENGINE exception: Processing failed.
+
+<<< no solution
+

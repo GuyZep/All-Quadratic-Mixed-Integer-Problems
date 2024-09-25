@@ -1,0 +1,76 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 71 rows, 263 columns, and 2349 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.67 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.10 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 67 rows and 67 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 194 columns, and 130 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.42 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   -19327.8948    32                 -19327.8948       25         
+      0     2    -1943.9759    32                 -19327.8948       53         
+Elapsed time = 0.14 sec. (52.08 ticks, tree = 0.01 MB, solutions = 0)
+     46    35    infeasible                        -1943.9759     1102         
+    127    79    infeasible                        -1943.9759     3000         
+    220   124   no solution                        -1943.9759     4629         
+    327   158   no solution                        -1943.9759     6937         
+*   390+  150                      -127270.4971    -1943.9759           -98.47%
+Found incumbent of value -127270.497100 after 1.09 sec. (1153.33 ticks)
+    413   169  -408301.9131    23  -127270.4971    -1943.9759     7915  -98.47%
+
+Root node processing (before b&c):
+  Real time             =    0.13 sec. (25.64 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    1.05 sec. (1301.49 ticks)
+  Sync time (average)   =    0.25 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    1.17 sec. (1327.13 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -127270.5
+X*: [10002 9997.4 10000 9997.3 10005 9997.3 9997.5 9997.4 10006 9998.3 10001 9997.3
+     10002 9997.3 9999.4 9997.3 10001 9995.4 10000 9997.3 10007 9997.3 9999.4
+     9997.4 10009 9996.3 10002 9997.3 10004 9997.3 10000 9997.3] Z*: [10002 10000 10001 10000 10007 10000 9998 10000 10008 10001 10002 10000 10003
+     10000 10000 10000 10003 9998 10001 10000 10009 10000 10000 10000 10011
+     9999 10003 10000 10006 10000 10001 10000]
+f*:1908.87187867
+
+<<< post process
+
+
+<<< done
+

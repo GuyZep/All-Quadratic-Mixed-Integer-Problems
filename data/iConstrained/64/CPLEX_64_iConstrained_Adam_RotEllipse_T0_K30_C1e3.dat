@@ -1,0 +1,168 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 64 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (2.02 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.18 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 129 rows and 129 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 256 columns, and 130 nonzeros.
+Presolve time = 0.00 sec. (0.24 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.74 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0        5.3321    64                      5.3321       16         
+*     0+    0                            5.4782        5.3321             2.67%
+Found incumbent of value 5.478241 after 0.52 sec. (215.09 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2        5.3321    64        5.4782        5.3321       32    2.67%
+Elapsed time = 0.53 sec. (246.73 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                            5.4451        5.3321             2.08%
+Found incumbent of value 5.445103 after 10.47 sec. (14684.49 ticks)
+*     1+    1                            5.4423        5.3321             2.03%
+Found incumbent of value 5.442331 after 41.17 sec. (61131.26 ticks)
+*     1+    1                            5.4396        5.3321             1.98%
+Found incumbent of value 5.439566 after 44.44 sec. (107043.42 ticks)
+*     1+    1                            5.4309        5.3321             1.82%
+Found incumbent of value 5.430929 after 48.77 sec. (116684.78 ticks)
+*     1+    1                            5.4303        5.3321             1.81%
+Found incumbent of value 5.430332 after 92.95 sec. (201973.84 ticks)
+      1     3        5.3350    63        5.4303        5.3321       47    1.81%
+      2     3        5.3348    63        5.4303        5.3321       48    1.81%
+      3     4        5.3387    61        5.4303        5.3321       63    1.81%
+      4     4        5.3384    62        5.4303        5.3321       61    1.81%
+      5     5        5.3409    62        5.4303        5.3348       83    1.76%
+      6     5        5.3404    62        5.4303        5.3348       77    1.76%
+      7     6        5.3415    61        5.4303        5.3348       95    1.76%
+      8     7        5.3433    61        5.4303        5.3348      111    1.76%
+      9     7        5.3422    61        5.4303        5.3348      107    1.76%
+     10     6        5.3416    61        5.4303        5.3348       96    1.76%
+Elapsed time = 570.61 sec. (949681.39 ticks, tree = 0.01 MB, solutions = 11)
+     11     8        5.3482    62        5.4303        5.3348      130    1.76%
+     12     9        5.3445    61        5.4303        5.3384      144    1.69%
+     13     8        5.3568    61        5.4303        5.3384      132    1.69%
+     14     9        5.3448    61        5.4303        5.3384      147    1.69%
+     15    10        5.3446    60        5.4303        5.3384      162    1.69%
+     16    13        5.3461    60        5.4303        5.3404      209    1.66%
+     17    12        5.3452    60        5.4303        5.3404      189    1.66%
+     18    14        5.3535    61        5.4303        5.3404      227    1.66%
+     19    11        5.3461    60        5.4303        5.3404      182    1.66%
+     20    16        5.3600    60        5.4303        5.3404      265    1.66%
+Elapsed time = 1007.53 sec. (1537589.80 ticks, tree = 0.01 MB, solutions = 11)
+     21    15        5.3591    60        5.4303        5.3404      250    1.66%
+     22    18        5.3476    59        5.4303        5.3415      301    1.64%
+     24    20        5.3483    58        5.4303        5.3415      333    1.64%
+     25    21        5.3571    60        5.4303        5.3415      347    1.64%
+     26    19        5.3493    59        5.4303        5.3415      327    1.64%
+     27    22        5.3506    59        5.4303        5.3415      372    1.64%
+     28    23        5.3637    59        5.4303        5.3415      391    1.64%
+     29    24        5.3626    59        5.4303        5.3415      422    1.64%
+     30    26        5.3577    59        5.4303        5.3415      458    1.64%
+     31    25        5.3531    58        5.4303        5.3415      432    1.64%
+Elapsed time = 1545.64 sec. (2133157.82 ticks, tree = 0.01 MB, solutions = 11)
+     32    27        5.3514    58        5.4303        5.3415      474    1.64%
+     33    28        5.3612    59        5.4303        5.3415      487    1.64%
+     34    29        5.3522    58        5.4303        5.3415      526    1.64%
+     35    30        5.3536    58        5.4303        5.3415      537    1.64%
+     36    32        5.3657    58        5.4303        5.3415      581    1.64%
+     37    31        5.3668    57        5.4303        5.3415      553    1.64%
+     38    34        5.3533    58        5.4303        5.3415      617    1.64%
+     39    33        5.3595    59        5.4303        5.3415      594    1.64%
+     40    35        5.3537    58        5.4303        5.3415      622    1.64%
+     41    36        5.3643    58        5.4303        5.3415      641    1.64%
+Elapsed time = 2009.63 sec. (2721113.30 ticks, tree = 0.01 MB, solutions = 11)
+     42    37        5.3581    57        5.4303        5.3415      682    1.64%
+     43    38        5.3627    57        5.4303        5.3415      698    1.64%
+     44    39        5.3735    58        5.4303        5.3415      718    1.64%
+     45    40        5.3704    57        5.4303        5.3415      743    1.64%
+     46    41        5.3570    57        5.4303        5.3415      759    1.64%
+     47    42        5.3623    58        5.4303        5.3415      776    1.64%
+     48    43        5.3631    57        5.4303        5.3415      792    1.64%
+     49    44        5.3684    57        5.4303        5.3415      810    1.64%
+     50    45        5.3601    57        5.4303        5.3415      848    1.64%
+     51    47        5.3811    57        5.4303        5.3415      887    1.64%
+Elapsed time = 2381.86 sec. (3333166.38 ticks, tree = 0.01 MB, solutions = 11)
+     52    48        5.3700    57        5.4303        5.3415      926    1.64%
+     53    46        5.3638    57        5.4303        5.3415      869    1.64%
+     54    49        5.3581    57        5.4303        5.3415      942    1.64%
+     55    51        5.3578    56        5.4303        5.3415      967    1.64%
+     56    53        5.3657    56        5.4303        5.3415     1012    1.64%
+     57    52        5.3739    56        5.4303        5.3415      986    1.64%
+     58    50        5.3719    58        5.4303        5.3415      957    1.64%
+     59    56        5.3794    56        5.4303        5.3415     1077    1.64%
+     60    54        5.3774    57        5.4303        5.3415     1032    1.64%
+     61    55        5.3782    56        5.4303        5.3415     1057    1.64%
+Elapsed time = 2833.70 sec. (3926169.65 ticks, tree = 0.01 MB, solutions = 11)
+     62    58        5.3607    56        5.4303        5.3415     1118    1.64%
+     63    57        5.3615    56        5.4303        5.3415     1101    1.64%
+     64    61        5.3753    57        5.4303        5.3415     1185    1.64%
+     65    59        5.3657    56        5.4303        5.3415     1137    1.64%
+     66    60        5.3785    56        5.4303        5.3415     1157    1.64%
+     67    63        5.3825    56        5.4303        5.3415     1227    1.64%
+     68    62        5.3699    56        5.4303        5.3415     1211    1.64%
+     69    64        5.3775    56        5.4303        5.3415     1248    1.64%
+     70    65        5.3608    56        5.4303        5.3415     1261    1.64%
+     71    66        5.3610    56        5.4303        5.3415     1278    1.64%
+Elapsed time = 3206.72 sec. (4457411.86 ticks, tree = 0.01 MB, solutions = 11)
+     72    68        5.3688    56        5.4303        5.3415     1319    1.64%
+     73    67        5.3790    56        5.4303        5.3415     1305    1.64%
+     74    69        5.3769    55        5.4303        5.3415     1340    1.64%
+     75    72        5.3813    55        5.4303        5.3415     1419    1.64%
+     76    70        5.3898    55        5.4303        5.3415     1368    1.64%
+     77    71        5.3732    54        5.4303        5.3415     1394    1.64%
+     78    74        5.3665    55        5.4303        5.3415     1448    1.64%
+     79    73        5.3640    55        5.4303        5.3415     1431    1.64%
+     80    75        5.3716    56        5.4303        5.3415     1463    1.64%
+
+Root node processing (before b&c):
+  Real time             =    0.52 sec. (215.12 ticks)
+Parallel b&c, 8 threads:
+  Real time             = 3599.50 sec. (4989636.64 ticks)
+  Sync time (average)   =  202.31 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) = 3600.02 sec. (4989851.76 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 5.430332
+X*: [2 2 1 1 1 2 0 1 0 1 0 1 -1 2 -1 1 0 2 -1 1 -1 1 -2 1 -2 1 -2 1 -3 1 -3 1] Z*: [1 2 0 1 0 2 -1 1 -1 1 -1 1 -2 2 -2 1 -1 2 -2 1 -2 1 -3 1 -3 1 -3 1 -4 1 -4
+     1]
+f*:5.43033171599
+
+<<< post process
+
+
+<<< done
+

@@ -1,0 +1,105 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 2 times.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Aggregator did 1 substitutions.
+Reduced MIQCP has 38 rows, 102 columns, and 171 nonzeros.
+Reduced MIQCP has 0 binaries, 16 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 3 quadratic constraints.
+Presolve time = 0.00 sec. (0.08 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Tried aggregator 1 time.
+LP Presolve eliminated 37 rows and 101 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.03 ticks)
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.00 sec. (0.05 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     2222.6540     0                                   11         
+      0     0     2222.6540     0                     Cone: 2       19         
+      0     0     2222.6540     0                     Cone: 4       26         
+      0     0     2222.6540     0                     Cone: 6       35         
+      0     0     2222.6540     1                     Cone: 8       44         
+      0     0     2222.6540     1                    Cone: 10       52         
+      0     0     2222.6540     1                    Cone: 12       62         
+      0     0     2828.1572     0                    Cone: 46      106         
+      0     0     2828.1572    12                    Cone: 78      137         
+      0     0     2828.1572    16                   Cone: 110      168         
+      0     0     2828.1573    16                   Cone: 142      199         
+      0     0     2828.1573    16                   Cone: 174      230         
+      0     0     2828.1573    16                   Cone: 205      262         
+      0     0     2828.1573    16                   Cone: 236      268         
+      0     0     2828.1573    16                   Cone: 267      274         
+      0     0     2828.1573    16                   Cone: 298      277         
+      0     0     2828.1573    16                   Cone: 329      280         
+      0     0     2828.1573    16                   Cone: 360      283         
+      0     0     2828.1573    16                   Cone: 391      286         
+      0     0     2828.1573    16                   Cone: 422      288         
+      0     0     2828.1573    16                   Cone: 453      290         
+      0     0     2828.1573    16                   Cone: 484      290         
+      0     0     2828.1573    16                   2828.1573      290         
+*     0+    0                         2846.1269     2828.1573             0.63%
+Found incumbent of value 2846.126900 after 0.03 sec. (8.33 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2     2828.1573    16     2846.1269     2828.1573      290    0.63%
+Elapsed time = 0.06 sec. (9.48 ticks, tree = 0.01 MB, solutions = 1)
+*   531   265      integral     0     2846.1263     2837.4903     2080    0.30%
+                                                    Cuts: 350                  
+Found incumbent of value 2846.126269 after 1.44 sec. (204.46 ticks)
+    578   291     2842.4955     6     2846.1263     2837.4903     2247    0.30%
+                                                      Cuts: 2                  
+    744   343        cutoff           2846.1263     2839.6102     2848    0.23%
+                                                     Cuts: 16                  
+    904   370    infeasible           2846.1263     2840.8309     3309    0.19%
+                                                      Cuts: 4                  
+   1055   372        cutoff           2846.1263     2841.7301     3856    0.15%
+                                                     Cuts: 36                  
+   1207   292        cutoff           2846.1263     2843.1728     4259    0.10%
+                                                     Cuts: 12                  
+
+Cone linearizations applied:  267
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (8.34 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    5.56 sec. (1298.85 ticks)
+  Sync time (average)   =    1.53 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    5.59 sec. (1307.18 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 2846.126
+X*: [-2.4726 2.4726 -2.4726 2.4726 -2.4726 2.4726 -2.4726 2.4726 -2.4726 2.4726
+     -2.4726 2.4726 -2.4726 2.4726 -2.4726 2.4726] Z*: [-2 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3]
+f*:2846.126375062
+
+<<< post process
+
+
+<<< done
+

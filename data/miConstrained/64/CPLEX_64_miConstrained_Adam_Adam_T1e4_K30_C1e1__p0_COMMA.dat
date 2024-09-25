@@ -1,0 +1,68 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.28 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   -12977.3428    32                 -12977.3428       17         
+*     0+    0                        -5508.1681   -12977.3428           135.60%
+Found incumbent of value -5508.168130 after 0.23 sec. (72.15 ticks)
+      0     0        cutoff          -5508.1681   -12977.3428       17  135.60%
+Elapsed time = 0.23 sec. (72.15 ticks, tree = 0.01 MB, solutions = 1)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (72.17 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.02 sec. (0.19 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.25 sec. (72.36 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -5508.168
+X*: [15022 14957 14958 14940 14972 14937 14970 14966 14953 14995 14955 14972 14978
+     14959 14978 14971 14950 14958 14968 14996 14966 14972 14954 14985 14943
+     14960 14967 14939 14925 14968 14914 14972] Z*: [9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004
+     9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996
+     10004 9996 10004 9996 10004]
+f*:166353691.795545548
+
+<<< post process
+
+
+<<< done
+

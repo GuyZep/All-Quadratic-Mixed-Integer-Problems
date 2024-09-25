@@ -1,0 +1,74 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 71 rows, 263 columns, and 2349 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.67 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.10 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 67 rows and 67 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 194 columns, and 130 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.42 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    25031.2241    32                  25031.2241       29         
+      0     2    10601.2858    32                  25031.2241       58         
+Elapsed time = 1.56 sec. (364.13 ticks, tree = 0.01 MB, solutions = 0)
+     62    37   no solution                        25031.2241     1466         
+    140    79    infeasible                        25031.2241     3204         
+*   167+   68                         3355.8777    25031.2241          -645.89%
+Found incumbent of value 3355.877741 after 2.00 sec. (952.46 ticks)
+    180    69     3080.6446    27     3355.8777    25031.2241     2676 -645.89%
+
+Root node processing (before b&c):
+  Real time             =    1.55 sec. (343.71 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.47 sec. (749.23 ticks)
+  Sync time (average)   =    0.10 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    2.02 sec. (1092.94 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 3355.878
+X*: [-37268 9893 9907.9 9894.5 9907.9 9894 9907.2 9893.7 9908.2 9894.3 9907.8 9893.6
+     9907.8 9893.9 9908.3 9896.1 9907.8 9894.9 9907.8 9893.4 9907.8 9893.9
+     9908.6 9894.8 9907.6 9893.8 9907.9 9894.7 9907.9 9894.2 9907.5 9891.1] Z*: [10007 9991 10007 9995 10007 9993 10007 9994 10008 9993 10007 9993 10007 9993
+     10008 9992 10007 9994 10007 9993 10007 9993 10009 9993 10007 9993 10007
+     9993 10007 9993 10007 9995]
+f*:306464.515238545
+
+<<< post process
+
+
+<<< done
+

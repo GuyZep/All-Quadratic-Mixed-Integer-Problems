@@ -1,0 +1,86 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =             0.000000
+Iteration:     2   Dual objective     =           472.273776
+Root relaxation solution time = 0.00 sec. (0.27 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      472.2738     0                                    2         
+      0     0      472.2738     1                     Cone: 2        3         
+      0     0      472.2738     1                     Cone: 4        4         
+      0     0      472.2738     1                     Cone: 6        5         
+      0     0      472.2738     1                     Cone: 8        6         
+      0     0      472.2738     1                    Cone: 10        7         
+      0     0      472.2738     1                    Cone: 12        8         
+      0     0      511.7604     1                   Cone: 139      148         
+      0     0      525.8544    32                   Cone: 256      179         
+      0     0      532.8949    32                   Cone: 373      196         
+      0     0      536.4083    32                   Cone: 492      210         
+      0     0      538.0010    32                   Cone: 613      223         
+      0     0      538.7187    31                   Cone: 732      233         
+      0     0      539.0817    32                   Cone: 851      242         
+      0     0      539.2728    32                   Cone: 970      253         
+      0     0      539.4410    32                  Cone: 1091      266         
+      0     0      539.5740    32                  Cone: 1213      280         
+      0     0      539.6475    32                  Cone: 1336      293         
+      0     0      539.7795    32                  Cone: 1460      312         
+      0     0      539.9105    32                  Cone: 1579      324         
+      0     0      539.9907    32                  Cone: 1698      335         
+      0     0      540.0309    32                  Cone: 1818      346         
+      0     0      540.0483    32                  Cone: 1938      356         
+      0     0      540.0696    32                    540.0696      369         
+*     0+    0                          540.0748      540.0696             0.00%
+Found incumbent of value 540.074774 after 0.13 sec. (79.29 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.14 sec. (79.32 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.14 sec. (79.32 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 540.0748
+X*: [-2.5687 0.62647 -2.4241 0.97454 -2.3161 1.2344 -2.2355 1.4283 -2.1753 1.5731
+     -2.1304 1.6812 -2.0969 1.7619 -2.0718 1.8221 -2.0531 1.8671 -2.0392 1.9006
+     -2.0288 1.9257 -2.021 1.9444 -2.0152 1.9583 -2.0109 1.9687 -2.0077 1.9765
+     -2.0052 1.9823] Z*: [-2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2 -2 2
+     -2 2]
+f*:540.074774086
+
+<<< post process
+
+
+<<< done
+

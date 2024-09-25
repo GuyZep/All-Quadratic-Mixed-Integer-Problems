@@ -1,0 +1,86 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 39 rows, 104 columns, and 173 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.06 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Tried aggregator 1 time.
+LP Presolve eliminated 38 rows and 103 columns.
+Aggregator did 1 substitutions.
+All rows and columns eliminated.
+Presolve time = 0.00 sec. (0.03 ticks)
+Initializing dual steep norms . . .
+Root relaxation solution time = 0.00 sec. (0.05 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0     2257.5002     0                                    9         
+      0     0     2257.5002     1                     Cone: 2       18         
+      0     0     2257.5002     2                     Cone: 4       25         
+      0     0     2257.5002     3                     Cone: 6       34         
+      0     0     2257.5002     4                     Cone: 8       42         
+      0     0     2257.5002     5                    Cone: 10       49         
+      0     0     2257.5002     6                    Cone: 12       57         
+      0     0     3000.0002     7                    Cone: 46      103         
+      0     0     3000.0002    26                    Cone: 78      134         
+      0     0     3000.0002    26                   Cone: 110      165         
+      0     0     3000.0002    32                   Cone: 142      196         
+      0     0     3000.0002    32                   Cone: 174      227         
+      0     0     3000.0002    32                   Cone: 206      258         
+      0     0     3000.0002    32                   Cone: 238      264         
+      0     0     3000.0002    32                   Cone: 270      271         
+      0     0     3000.0002    32                   Cone: 302      273         
+      0     0     3000.0002    32                   Cone: 334      276         
+      0     0     3000.0002    32                   Cone: 366      279         
+      0     0     3000.0002    32                   Cone: 398      282         
+      0     0     3000.0002    32                   Cone: 430      284         
+      0     0     3000.0002    32                   Cone: 462      286         
+      0     0     3000.0002    32                   Cone: 494      286         
+      0     0     3000.0002    32                   3000.0002      286         
+*     0+    0                         3000.0001     3000.0002            -0.00%
+Found incumbent of value 3000.000132 after 0.02 sec. (6.95 ticks)
+      0     0        cutoff           3000.0001     3000.0002      286   -0.00%
+Elapsed time = 0.02 sec. (6.95 ticks, tree = 0.01 MB, solutions = 1)
+
+Cone linearizations applied:  95
+
+Root node processing (before b&c):
+  Real time             =    0.02 sec. (6.95 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.00 sec. (0.00 ticks)
+  Sync time (average)   =    0.00 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.02 sec. (6.95 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 3000
+X*: [-3 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3] Z*: [-3 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3 -3 3]
+f*:3000.0002
+
+<<< post process
+
+
+<<< done
+

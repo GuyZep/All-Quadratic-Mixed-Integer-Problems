@@ -1,0 +1,180 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 39 rows, 135 columns, and 669 nonzeros.
+Reduced MIQCP has 0 binaries, 16 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.26 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.03 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 35 rows and 35 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 98 columns, and 66 nonzeros.
+Presolve time = 0.00 sec. (0.05 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.16 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0      281.3958    16                    281.3958       15         
+*     0+    0                          286.9413      281.3958             1.93%
+Found incumbent of value 286.941319 after 0.03 sec. (6.36 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2      281.3958    16      286.9413      281.3958       29    1.93%
+Elapsed time = 0.03 sec. (8.68 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                          286.9413      281.3958             1.93%
+Found incumbent of value 286.941318 after 0.05 sec. (22.77 ticks)
+*     1+    1                          286.2012      281.3958             1.68%
+Found incumbent of value 286.201195 after 0.14 sec. (61.45 ticks)
+      1     3      281.3987    15      286.2012      281.3958       47    1.68%
+      2     3      281.3991    15      286.2012      281.3958       46    1.68%
+      3     4      282.6471    14      286.2012      281.3958       68    1.68%
+      4     5      282.6544    14      286.2012      281.3987       91    1.68%
+      5     4      282.4270    14      286.2012      281.3987       64    1.68%
+      7     6      283.9140    13      286.2012      281.3987      104    1.68%
+      8     7      283.9173    13      286.2012      281.3987      133    1.68%
+      9     6      283.4087    13      286.2012      281.3987      102    1.68%
+     12     7      283.4170    13      286.2012      282.4186      134    1.32%
+     13     9      283.1162    13      286.2012      282.4186      170    1.32%
+Elapsed time = 19.81 sec. (25997.25 ticks, tree = 0.01 MB, solutions = 2)
+     15     8        cutoff            286.2012      282.4186      186    1.32%
+     16     9        cutoff            286.2012      282.4186      210    1.32%
+     17    14      284.4153    13      286.2012      282.4186      272    1.32%
+     19    12      285.6084    12      286.2012      282.4186      229    1.32%
+     20    15      285.6034    12      286.2012      282.4186      298    1.32%
+     21    16      283.5962    12      286.2012      282.4270      315    1.32%
+     23    16      284.4345    12      286.2012      283.1162      344    1.08%
+     24    15      284.4418    12      286.2012      283.1162      366    1.08%
+     25    17      284.6530    11      286.2012      283.1162      407    1.08%
+     27    16        cutoff            286.2012      283.1162      426    1.08%
+Elapsed time = 40.11 sec. (44825.30 ticks, tree = 0.01 MB, solutions = 2)
+     28    19      286.1928    11      286.2012      283.1162      454    1.08%
+     29    21      284.7400    12      286.2012      283.1162      501    1.08%
+     31    22      285.7736    12      286.2012      283.1162      513    1.08%
+     32    23      285.8000    11      286.2012      283.1162      536    1.08%
+     34    25      284.8349    10      286.2012      283.1162      576    1.08%
+     35    24      284.1773    13      286.2012      283.1162      594    1.08%
+     36    23        cutoff            286.2012      283.1162      612    1.08%
+     37    26      285.0981    11      286.2012      283.1162      633    1.08%
+     39    28      285.7667    11      286.2012      283.1162      667    1.08%
+     40    29      286.1769    10      286.2012      283.1162      692    1.08%
+Elapsed time = 57.20 sec. (65740.74 ticks, tree = 0.01 MB, solutions = 2)
+     41    30      285.0583     9      286.2012      283.1162      715    1.08%
+     43    30        cutoff            286.2012      283.1162      751    1.08%
+     44    29        cutoff            286.2012      283.1162      768    1.08%
+     45    32      285.4268    10      286.2012      283.1162      787    1.08%
+     48    33        cutoff            286.2012      283.1162      846    1.08%
+     49    36      285.2430     8      286.2012      283.1162      865    1.08%
+     51    34        cutoff            286.2012      283.1162      905    1.08%
+     52    35      284.1899    12      286.2012      283.1162      922    1.08%
+     53    36      285.8114     9      286.2012      283.1162      939    1.08%
+     55    37      285.8316     8      286.2012      283.1162      963    1.08%
+Elapsed time = 78.84 sec. (88041.53 ticks, tree = 0.01 MB, solutions = 2)
+     56    35        cutoff            286.2012      283.1162     1006    1.08%
+     57    38      285.4095     7      286.2012      283.1162     1028    1.08%
+     58    37      285.2282     9      286.2012      283.1162     1042    1.08%
+     59    34        cutoff            286.2012      283.1162     1063    1.08%
+     60    35        cutoff            286.2012      283.1162     1083    1.08%
+     61    38      286.1329     8      286.2012      283.1162     1102    1.08%
+     62    35        cutoff            286.2012      283.1162     1115    1.08%
+     64    35    infeasible            286.2012      283.1162     1161    1.08%
+     66    39      285.3951     8      286.2012      283.1162     1190    1.08%
+     67    36    infeasible            286.2012      283.1162     1218    1.08%
+Elapsed time = 96.06 sec. (105568.11 ticks, tree = 0.01 MB, solutions = 2)
+     68    35        cutoff            286.2012      283.1162     1227    1.08%
+     69    38      286.1252     7      286.2012      283.1162     1248    1.08%
+     71    36        cutoff            286.2012      283.1162     1281    1.08%
+     72    35        cutoff            286.2012      283.1162     1327    1.08%
+     73    38      285.7366     5      286.2012      283.1162     1320    1.08%
+     74    39      285.6100     6      286.2012      283.1162     1342    1.08%
+     76    35        cutoff            286.2012      283.1162     1385    1.08%
+     77    36        cutoff            286.2012      283.1162     1406    1.08%
+     79    34        cutoff            286.2012      283.1162     1473    1.08%
+     80    35      286.0964    10      286.2012      283.1162     1513    1.08%
+Elapsed time = 113.52 sec. (127026.42 ticks, tree = 0.01 MB, solutions = 2)
+     82    37      285.7264     5      286.2012      283.1162     1547    1.08%
+     84    33        cutoff            286.2012      283.1162     1583    1.08%
+     85    32        cutoff            286.2012      283.1162     1601    1.08%
+     87    30        cutoff            286.2012      283.1215     1639    1.08%
+     88    31        cutoff            286.2012      283.1215     1652    1.08%
+     90    34        cutoff            286.2012      283.1215     1707    1.08%
+     92    33        cutoff            286.2012      283.1215     1723    1.08%
+     93    32        cutoff            286.2012      283.1215     1744    1.08%
+     95    30        cutoff            286.2012      283.1215     1787    1.08%
+     96    29        cutoff            286.2012      283.1215     1805    1.08%
+Elapsed time = 135.92 sec. (151498.38 ticks, tree = 0.01 MB, solutions = 2)
+     98    29        cutoff            286.2012      283.1215     1842    1.08%
+    100    29        cutoff            286.2012      283.1215     1880    1.08%
+    101    28        cutoff            286.2012      283.9452     1898    0.79%
+    102    27        cutoff            286.2012      283.9452     1913    0.79%
+    103    26        cutoff            286.2012      283.9452     1941    0.79%
+    104    25        cutoff            286.2012      283.9452     1953    0.79%
+    105    28      286.1969     1      286.2012      283.9452     1972    0.79%
+    106    25        cutoff            286.2012      283.9452     1988    0.79%
+    108    25        cutoff            286.2012      283.9452     2029    0.79%
+    110    23        cutoff            286.2012      283.9452     2059    0.79%
+Elapsed time = 153.75 sec. (170921.12 ticks, tree = 0.01 MB, solutions = 2)
+    111    22        cutoff            286.2012      283.9452     2083    0.79%
+    112    21        cutoff            286.2012      283.9452     2103    0.79%
+    113    22      286.2012     0      286.2012      283.9452     2126    0.79%
+    115    22        cutoff            286.2012      283.9452     2159    0.79%
+    116    21        cutoff            286.2012      283.9452     2181    0.79%
+    117    22      285.7771    11      286.2012      283.9452     2206    0.79%
+    119    18    infeasible            286.2012      283.9452     2233    0.79%
+    120    17        cutoff            286.2012      283.9452     2250    0.79%
+    121    16        cutoff            286.2012      283.9452     2268    0.79%
+    123    14        cutoff            286.2012      283.9452     2298    0.79%
+Elapsed time = 171.73 sec. (190578.80 ticks, tree = 0.01 MB, solutions = 2)
+    124    13        cutoff            286.2012      283.9452     2317    0.79%
+    125    16      286.1512    10      286.2012      283.9452     2338    0.79%
+    126    12      286.1432    12      286.2012      283.9452     2415    0.79%
+    127    10      286.1326    12      286.2012      283.9590     2451    0.78%
+    128     8        cutoff            286.2012      283.9590     2495    0.78%
+
+Root node processing (before b&c):
+  Real time             =    0.03 sec. (6.37 ticks)
+Parallel b&c, 8 threads:
+  Real time             =  179.86 sec. (206603.70 ticks)
+  Sync time (average)   =   14.73 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  179.89 sec. (206610.07 ticks)
+
+<<< solve
+
+
+OBJECTIVE: 286.2012
+X*: [-106.65 3.655 -4.0133 3.6551 -4.0126 3.6554 -4.0114 3.6559 -4.0092 3.6568
+     -4.0052 3.6584 -3.998 3.6613 -3.985 3.6666] Z*: [6 4 -4 4 -4 4 -4 4 -3 4 -3 4 -3 4 -2 5]
+f*:286.201195345
+
+<<< post process
+
+
+<<< done
+

@@ -1,0 +1,129 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 71 rows, 263 columns, and 2349 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 4 quadratic constraints.
+Presolve time = 0.00 sec. (0.67 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Dual infeasible due to empty column 'x(2)'.
+Presolve time = 0.00 sec. (0.10 ticks)
+Tried aggregator 1 time.
+LP Presolve eliminated 67 rows and 67 columns.
+Aggregator did 2 substitutions.
+Reduced LP has 2 rows, 194 columns, and 130 nonzeros.
+Presolve time = 0.00 sec. (0.14 ticks)
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.02 sec. (0.42 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   -13193.9745    32                 -13193.9745       22         
+      0     2  -714963.3671    32                 -13193.9745       45         
+Elapsed time = 1.86 sec. (426.49 ticks, tree = 0.01 MB, solutions = 0)
+     20    17   -88177.2002    30                 -13193.9745      463         
+     87    70   -78566.5857    26                 -13193.9745     1876         
+    141   110   -94712.4001    25                 -13193.9745     3297         
+    207   141   no solution                       -13193.9745     4662         
+    266   175   no solution                       -13193.9745     5655         
+    341   234   no solution                       -13193.9745     7757         
+    406   255   no solution                       -13193.9745     8585         
+    479   313    -6060.5985    25                 -13193.9745    10381         
+    531   376   no solution                       -13193.9745    12757         
+    790   490    infeasible                       -13193.9745    17797         
+Elapsed time = 3.92 sec. (3563.71 ticks, tree = 0.09 MB, solutions = 0)
+   1105   627  -108023.0740    23                 -13193.9745    23695         
+*  1245+  662                         -289.7688   -13193.9745              --- 
+Found incumbent of value -289.768839 after 4.83 sec. (4912.38 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+*  1282+  308                        -6796.4211   -13193.9745            94.13%
+Found incumbent of value -6796.421118 after 6.67 sec. (6867.71 ticks)
+*  1282+  307                       -18867.4637   -13193.9745           -30.07%
+Found incumbent of value -18867.463701 after 11.92 sec. (7990.39 ticks)
+   1282   310     unbounded         -18867.4637   -13193.9745    30806  -30.07%
+   1283   308        cutoff         -18867.4637   -13193.9745    30812  -30.07%
+   1284   310     unbounded         -18867.4637   -13193.9745    30805  -30.07%
+   1289   310     unbounded         -18867.4637   -13193.9745    30857  -30.07%
+   1291   311     unbounded         -18867.4637   -13193.9745    30872  -30.07%
+   1295   314     unbounded         -18867.4637   -13193.9745    30974  -30.07%
+   1296   314    infeasible         -18867.4637   -13193.9745    31006  -30.07%
+   1300   315     unbounded         -18867.4637   -13193.9745    30990  -30.07%
+   1301   316     unbounded         -18867.4637   -13193.9745    31081  -30.07%
+Elapsed time = 132.14 sec. (197113.14 ticks, tree = 0.08 MB, solutions = 1)
+   1302   315     unbounded         -18867.4637   -13193.9745    31096  -30.07%
+   1306   315    infeasible         -18867.4637   -13193.9745    31166  -30.07%
+   1307   318     unbounded         -18867.4637   -13193.9745    31228  -30.07%
+   1310   318     unbounded         -18867.4637   -13193.9745    31261  -30.07%
+   1311   318     unbounded         -18867.4637   -13193.9745    31188  -30.07%
+   1312   316    infeasible         -18867.4637   -13193.9745    31294  -30.07%
+   1315   315    infeasible         -18867.4637   -13193.9745    31344  -30.07%
+   1316   317     unbounded         -18867.4637   -13193.9745    31277  -30.07%
+   1317   316    infeasible         -18867.4637   -13193.9745    31362  -30.07%
+   1318   317     unbounded         -18867.4637   -13193.9745    31382  -30.07%
+Elapsed time = 222.22 sec. (340654.01 ticks, tree = 0.08 MB, solutions = 1)
+   1321   318     unbounded         -18867.4637   -13193.9745    31436  -30.07%
+   1322   317    infeasible         -18867.4637   -13193.9745    31451  -30.07%
+   1323   318     unbounded         -18867.4637   -13193.9745    31471  -30.07%
+   1324   317    infeasible         -18867.4637   -13193.9745    31488  -30.07%
+   1327   316    infeasible         -18867.4637   -13193.9745    31538  -30.07%
+   1328   317    infeasible         -18867.4637   -13193.9745    31627  -30.07%
+   1331   318     unbounded         -18867.4637   -13193.9745    31647  -30.07%
+   1332   316    infeasible         -18867.4637   -13193.9745    31572  -30.07%
+   1333   316    infeasible         -18867.4637   -13193.9745    31678  -30.07%
+   1336   316    infeasible         -18867.4637   -13193.9745    31713  -30.07%
+Elapsed time = 284.00 sec. (425815.82 ticks, tree = 0.02 MB, solutions = 3)
+   1337   309  -119374.3129    32   -18867.4637   -13193.9745    30813  -30.07%
+   1338   317     unbounded         -18867.4637   -13193.9745    31558  -30.07%
+   1339   317     unbounded         -18867.4637   -13193.9745    31733  -30.07%
+   1340   316     unbounded         -18867.4637   -13193.9745    31749  -30.07%
+   1343   317     unbounded         -18867.4637   -13193.9745    31803  -30.07%
+   1344   309  -124257.7345    29   -18867.4637   -13193.9745    30904  -30.07%
+
+Root node processing (before b&c):
+  Real time             =    1.84 sec. (404.37 ticks)
+Parallel b&c, 8 threads:
+  Real time             =  313.72 sec. (528978.00 ticks)
+  Sync time (average)   =    5.31 sec.
+  Wait time (average)   =    0.01 sec.
+                          ------------
+Total (root+branch&cut) =  315.56 sec. (529382.37 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -18867.46
+X*: [9920.1 10300 10314 10300 10314 10300 10314 10300 10314 10300 10314 10300 10314
+     10300 10314 10300 10314 10300 10314 10300 10314 10300 10314 10300 10314
+     10300 10314 10300 10314 10300 10314 10300] Z*: [9994 10005 10005 10002 10005 10004 10000 10004 10005 10003 10005 10003 10005
+     10003 10005 10003 10005 10003 10005 10003 10005 10003 10003 10003 10005
+     10003 10005 10003 10005 10003 10007 10003]
+f*:2922475.256208666
+
+<<< post process
+
+
+<<< done
+

@@ -1,0 +1,75 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.00 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =         78381.119114
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.33 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0   -59519.9115    32                 -59519.9115       18         
+*     0+    0                       -21063.4999   -59519.9115           182.57%
+Found incumbent of value -21063.499894 after 0.27 sec. (95.41 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2   -98182.7926    32   -21063.4999   -59519.9115       37  182.57%
+Elapsed time = 0.30 sec. (150.46 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                       -21111.9030   -25204.5338            19.39%
+Found incumbent of value -21111.903038 after 15.00 sec. (366.95 ticks)
+*     1+    1                       -74521.7577   -25204.5338           -66.18%
+Found incumbent of value -74521.757653 after 15.00 sec. (36459.22 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.27 sec. (95.44 ticks)
+Parallel b&c, 8 threads:
+  Real time             =   25.09 sec. (65666.00 ticks)
+  Sync time (average)   =   11.05 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =   25.36 sec. (65761.44 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -74521.76
+X*: [10422 10430 10447 10432 10421 10439 10390 10431 10417 10430 10425 10429 10419
+     10422 10429 10439 10391 10424 10442 10435 10413 10430 10432 10425 10421
+     10430 10441 10429 10465 10426 10424 10425] Z*: [9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004
+     9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996
+     10004 9996 10004 9996 10004]
+f*:1235880.474771218
+
+<<< post process
+
+
+<<< done
+

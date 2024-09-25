@@ -1,0 +1,73 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.02 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =           338.631904
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.32 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0       -7.1808    32                     -7.1808       31         
+*     0+    0                            0.8754       -7.1808           920.25%
+Found incumbent of value 0.875442 after 0.23 sec. (78.41 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2        0.4445    32        0.8754       -7.1808       48  920.25%
+Elapsed time = 0.25 sec. (126.22 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                           -0.0390        0.4445              --- 
+Found incumbent of value -0.039021 after 0.34 sec. (379.52 ticks)
+
+Root node processing (before b&c):
+  Real time             =    0.23 sec. (78.43 ticks)
+Parallel b&c, 8 threads:
+  Real time             =    0.34 sec. (905.75 ticks)
+  Sync time (average)   =    0.11 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =    0.58 sec. (984.19 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -0.03902073
+X*: [10002 10002 10001 10002 10001 10002 10000 10002 10000 10002 9999.5 10002 9999.5
+     10002 9998.5 10002 10001 10002 10000 10002 9999.5 10002 9998.5 10002 9998.5
+     10002 9997.5 10002 9997.5 10002 9996.5 10002] Z*: [10002 10001 10001 10001 10001 10001 10000 10001 10000 10001 9999 10001 9999
+     10001 9998 10001 10001 10001 10000 10001 9999 10001 9998 10001 9998 10001
+     9997 10001 9997 10001 9996 10001]
+f*:0.596161813
+
+<<< post process
+
+
+<<< done
+

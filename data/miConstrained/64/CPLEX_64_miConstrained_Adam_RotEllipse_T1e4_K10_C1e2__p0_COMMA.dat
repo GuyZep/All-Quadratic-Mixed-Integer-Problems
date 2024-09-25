@@ -1,0 +1,88 @@
+
+<<< setup
+
+
+<<< generate
+
+CPXPARAM_Simplex_Tolerances_Optimality           0.001
+CPXPARAM_Simplex_Tolerances_Feasibility          0.001
+CPXPARAM_TimeLimit                               3600
+CPXPARAM_Threads                                 8
+CPXPARAM_MIP_Tolerances_AbsMIPGap                0.001
+CPXPARAM_MIP_Tolerances_MIPGap                   0.001
+CPXPARAM_MIP_Tolerances_Integrality              0.001
+CPXPARAM_MIP_Display                             4
+CPXPARAM_MIP_PolishAfter_Solutions               1
+Tried aggregator 1 time.
+MIQCP Presolve eliminated 2 rows and 2 columns.
+Reduced MIQCP has 133 rows, 387 columns, and 4489 nonzeros.
+Reduced MIQCP has 0 binaries, 32 generals, 0 SOSs, and 0 indicators.
+Reduced MIQCP has 66 quadratic constraints.
+Presolve time = 0.02 sec. (1.92 ticks)
+MIP emphasis: balance optimality and feasibility.
+MIP search method: dynamic search.
+Parallel mode: deterministic, using up to 8 threads.
+Initializing dual steep norms . . .
+
+Iteration log . . .
+Iteration:     1   Scaled dual infeas =         14610.259251
+
+Iteration log . . .
+Iteration:     1    Scaled infeas =             0.000000
+Root relaxation solution time = 0.00 sec. (0.32 ticks)
+
+        Nodes                                         Cuts/
+   Node  Left     Objective  IInf  Best Integer    Best Bound    ItCnt     Gap
+
+      0     0    -3083.0673    32                  -3083.0673       19         
+*     0+    0                        -1249.8712    -3083.0673           146.67%
+Found incumbent of value -1249.871164 after 0.31 sec. (112.64 ticks)
+
+Starting condition for polishing reached (PolishAfterIntSol).
+Starting solution polishing.
+
+      0     2    -3156.2630    32    -1249.8712    -3083.0673       36  146.67%
+Elapsed time = 0.33 sec. (161.47 ticks, tree = 0.01 MB, solutions = 1)
+*     1+    1                        -1306.4637    -3083.0673           135.99%
+Found incumbent of value -1306.463709 after 0.59 sec. (808.12 ticks)
+*     1+    1                        -1378.6380    -3083.0673           123.63%
+Found incumbent of value -1378.638010 after 25.73 sec. (50953.81 ticks)
+*     1+    1                        -1626.0082    -3083.0673            89.61%
+Found incumbent of value -1626.008226 after 25.73 sec. (52535.35 ticks)
+*     1+    1                        -2411.8539    -3083.0673            27.83%
+Found incumbent of value -2411.853949 after 48.47 sec. (120715.75 ticks)
+      1     3    -4597.2566    32    -2411.8539    -3083.0673       58   27.83%
+      2     1        cutoff          -2411.8539    -3083.0673       61   27.83%
+*     3+    2                        -2671.6884    -3083.0673            15.40%
+Found incumbent of value -2671.688441 after 299.56 sec. (764491.35 ticks)
+      3     4    -4699.5374    32    -2671.6884    -3083.0673       82   15.40%
+*     4+    2                        -7292.2922    -3083.0673           -57.72%
+Found incumbent of value -7292.292248 after 522.03 sec. (1242794.22 ticks)
+      4     4    -9645.2686    31    -7292.2922    -3083.0673      142  -57.72%
+      5     4   -26717.8291    32    -7292.2922    -3083.0673      140  -57.72%
+
+Root node processing (before b&c):
+  Real time             =    0.31 sec. (112.67 ticks)
+Parallel b&c, 8 threads:
+  Real time             =  702.20 sec. (1790172.85 ticks)
+  Sync time (average)   =  359.21 sec.
+  Wait time (average)   =    0.00 sec.
+                          ------------
+Total (root+branch&cut) =  702.52 sec. (1790285.52 ticks)
+
+<<< solve
+
+
+OBJECTIVE: -7292.292
+X*: [9994.2 10010 10000 10011 9991.6 10006 9994.4 10007 9996.9 10010 9993.7 10005
+     9995.6 10008 9998.3 10010 9995 10017 10004 10006 9996.3 10010 9994.4 10009
+     9998.2 10012 9993.3 10006 9998.9 10004 9997.9 10013] Z*: [9996 10004 9997 10004 9996 10004 9996 10004 9996 10004 9996 10004 9996 10004
+     9996 10004 9996 10004 9996 10004 9996 10004 9997 10004 9997 10004 9997
+     10004 9997 10004 9997 10004]
+f*:178.135727347
+
+<<< post process
+
+
+<<< done
+
